@@ -1,0 +1,3 @@
+# 保留 data 目录结构
+# 知识库数据库（knowledge.db 及其 WAL 临时文件）为派生数据，不纳入版本控制
+# 首次运行请执行: python -m src.knowledge

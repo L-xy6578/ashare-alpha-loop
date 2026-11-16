@@ -1,0 +1,5 @@
+# Windows Script Host 对 LF-only 的 .vbs 会解析错位（"缺少语句"）→ 强制 CRLF
+*.vbs text eol=crlf
+# 代码与文档统一 LF（避免混合行尾导致工具误改，2026-08-17 标准化）
+*.py text eol=lf
+*.md text eol=lf
