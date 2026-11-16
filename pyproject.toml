@@ -3,15 +3,15 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "triangle-loop-quant"
+name = "ashare-alpha-loop"
 version = "0.1.0"
-description = "三角闭环选股体系 — 对题本/错题本知识库"
+description = "AlphaLoop — A-share quantitative research and paper-trading framework"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = []
 license = { text = "AGPL-3.0-or-later" }
 authors = [{ name = "Triangle Loop Contributors" }]
-keywords = ["quant", "a-share", "backtest", "sqlite", "research"]
+keywords = ["quant", "a-share", "alpha", "sqlite", "research", "paper-trading"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Financial and Insurance Industry",
@@ -22,8 +22,8 @@ classifiers = [
 ]
 
 [project.urls]
-Repository = "https://github.com/L-xy6578/triangle-loop-quant"
-Issues = "https://github.com/L-xy6578/triangle-loop-quant/issues"
+Repository = "https://github.com/L-xy6578/ashare-alpha-loop"
+Issues = "https://github.com/L-xy6578/ashare-alpha-loop/issues"
 
 [project.optional-dependencies]
 dev = ["pytest>=7.4"]

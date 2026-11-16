@@ -1,8 +1,14 @@
-# 三角闭环量化研究框架
+# AlphaLoop · A股量化研究框架
+
+[![tests](https://github.com/L-xy6578/ashare-alpha-loop/actions/workflows/tests.yml/badge.svg)](https://github.com/L-xy6578/ashare-alpha-loop/actions/workflows/tests.yml)
+[![license: AGPL-3.0](https://img.shields.io/badge/license-AGPL--3.0-blue.svg)](LICENSE)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/)
 
 > 一个面向 A 股的量化研究与纸面交易框架：行情采集、因子评分、观察池、模拟持仓、决策留痕、复盘报表。
 >
 > 设计原则：**不预测行情，只应对行情；先测量，再谈提升。**
+
+**English:** AlphaLoop is a local-first A-share quantitative research and paper-trading framework. It covers market data collection, factor scoring, watchlists, simulated positions, decision logs and review reports. It does not place real orders and is not investment advice.
 
 ## 这是什么
 
@@ -65,8 +71,8 @@
 要求 Python 3.11+。项目运行本身只依赖标准库，测试依赖 pytest。
 
 ```bash
-git clone https://github.com/<your-name>/triangle-loop-quant.git
-cd triangle-loop-quant
+git clone https://github.com/L-xy6578/ashare-alpha-loop.git
+cd ashare-alpha-loop
 
 python -m venv .venv
 # Windows
@@ -179,6 +185,17 @@ python -m pytest -q
 测试使用临时 SQLite 数据库和静态行情夹具，不依赖网络。需要联网的采集逻辑请用 `--dry-run` 手工验证。
 
 ## 贡献
+
+欢迎一起开发。参与方式见 [CONTRIBUTING.md](CONTRIBUTING.md)，行为规范见 [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)。
+
+适合第一次参与的方向：
+
+- 补英文 README 或使用教程
+- 增加券商成交单 CSV 导入
+- 增加新的数据源适配器
+- 改进报表模板与示例
+
+带 `good first issue` 或 `help wanted` 标签的 Issue 可以直接认领。
 
 提交前请确认：
 

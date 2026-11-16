@@ -1,0 +1,62 @@
+name: Bug report
+description: 报告一个可复现的问题
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈。请先搜索现有 Issue，并确认没有粘贴真实账户、成交或 token。
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 发生了什么
+      description: 描述实际结果和预期结果。
+      placeholder: 运行命令后出现...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 尽量给出最小复现命令或测试用例。
+      placeholder: |
+        1. 运行 ...
+        2. 看到 ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 报错 / 日志
+      description: 粘贴关键堆栈，注意删除 token、账号和个人信息。
+      render: text
+
+  - type: input
+    id: version
+    attributes:
+      label: 版本或提交
+      placeholder: v0.1.0 / 890a863
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: 运行环境
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - 其他
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 确认
+      options:
+        - label: 我已搜索现有 Issue
+          required: true
+        - label: 我没有粘贴真实账户、成交或 token
+          required: true
